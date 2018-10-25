@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+using namespace std;
+    
+struct CandyBar
+{
+	string name;
+	double netto;
+	int ccal;
+};
+    
+int main ()
+{ 
+CandyBar *bar= new CandyBar[3];
+	bar[0].name="Sweet dreams";
+	bar[0].netto=1.1;
+	bar[0].ccal=1;
+	bar[1].name="are made";
+	bar[1].netto=2.1;
+	bar[1].ccal=3;
+	bar[2].name="of this";
+	bar[2].netto=5.1;
+	bar[2].ccal=8;    
+cout<<"Struct  "<<bar[0].name<<"    "<<bar[0].netto<<"   "<<bar[0].ccal<<endl;
+cout<<"Struct  "<<bar[1].name<<"    "<<bar[1].netto<<"   "<<bar[1].ccal<<endl;
+cout<<"Struct  "<<bar[2].name<<"    "<<bar[2].netto<<"   "<<bar[2].ccal<<endl;
+	system("pause");
+	delete bar;
+	return 0;
+}

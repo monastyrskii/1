@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+void repeat1()
+	{
+
+	for (int i=0; i<2; i++)
+		{
+
+		cout << "Three Ülind mice" << endl;
+
+		}
+
+	}
+
+void repeat2()
+	{
+
+	for (int i=0; i<2; i++)
+		{
+		cout << "See how they run" << endl;
+
+	}
+
+		}
+
+int main()
+	{
+
+	repeat1();
+
+	repeat2();
+
+	system("pause");
+	return 0;
+
+	}

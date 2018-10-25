@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+	const short foot = 12; 
+	const float meter = 0.0254; 
+	const float kilogram = 2.2; 
+ 
+	short f,i; 
+	cout << "Enter height in feet: _\b"; 
+	cin >> f;
+	cout << "and inches: _\b";
+	cin >> i;
+	cout << endl << "Enter your weight in pounds:___\b\b\b";
+	float p;
+	cin >> p;
+ 
+	float H = (f * foot + i) * meter; 
+	float W = p / kilogram; 
+	float BMI = W / (H*H); 
+ 
+	cout << endl << "Height in inches: " << f * foot + i << endl;
+	cout << "Height in meters: " << H << endl;
+	cout << "Weight in kilograms: " << W << endl;
+	cout << "Body Mass Index: " << BMI << endl;
+}

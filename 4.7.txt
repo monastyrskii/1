@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct pizza 
+{
+	string name;
+	int diametr;
+	float netto;
+};
+
+int main() 
+{
+pizza pizza;
+	cout << "Enter company name: " << endl;
+	cin >> pizza.name;
+	cout << "Enter diameter: " << endl;
+	cin >> pizza.diametr;
+	cout << "Enter weight: " << endl;
+	cin >> pizza.netto;
+	cout << pizza.name << "  " << pizza.diametr << "  " << pizza.netto << endl;
+system("pause");
+return 0;
+}

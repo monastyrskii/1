@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	cout << "Enter the number of kilometers:" << endl;
+	double distance;
+	cin >> distance;
+	cout << "Enter the number of liters:" << endl;
+	int oil;
+	cin >> oil;
+	cout << "For one kilometer you spent" << " " << oil / distance << " " << "litters" << endl;
+	system("pause");
+	return 0;
+}

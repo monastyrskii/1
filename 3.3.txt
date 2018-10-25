@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+
+int main()
+{
+	const int arcsec = 60; 
+	const int arcmin = 60; 
+	cout << "Enter a latitude in degrees, minutes, and seconds:" << endl;
+	cout << "First, enter the degrees: ";
+	int degree;
+	cin >> degree;
+	cout << endl << "Next, enter the minutes of arc: ";
+	int minute;
+	cin >> minute;
+	cout << endl << "Finally, enter the seconds of arc: " << endl;
+
+	int second;
+	cin >> second;
+	double arcm = (double)minute/arcsec;          
+	double arcs = (double)second/(arcsec*arcmin); 
+	double latitude = degree+arcs+arcm;           
+	cout << degree << " degrees, " << minute << " minutes, " << second << " seconds = " << latitude << " degrees." << endl;
+	return 0;
+}

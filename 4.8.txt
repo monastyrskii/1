@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Pizza
+{
+	string name ;
+	double diametr;
+	int netto;
+};
+    
+int main ()
+{   
+	Pizza *pz =new Pizza;
+	cout << "Enter diametr:" << endl;
+	cin >> (*pz).diametr;
+	cout << "Enter Name:" << endl;
+	cin >> (*pz).name ;
+	cout << "Enter weight:" << endl;
+	cin >> (*pz).netto;
+	cout << "Pizza: " << (*pz).name << endl;
+	cout << "Diametr: " << (*pz).diametr << endl << "Weight: " << (*pz).netto << endl;
+	system ("pause");
+	delete pz;
+	return 0;
+  }

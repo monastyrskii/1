@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+double converting(double celsius)
+
+{
+
+	return (1.8 * celsius + 32);
+
+}
+
+int main()
+
+{
+
+	double celsius;
+
+	cout << "Please enter à Celsius value : ";
+
+	cin >> celsius;
+
+	cout << celsius << endl;
+
+	cout << celsius << " degrees Celsius is " << converting(celsius) << " degrees Fahrenheit." << endl;
+
+}

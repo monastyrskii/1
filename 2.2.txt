@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+int main() 
+	{
+
+	int furlongs;
+
+	cout <<  "Enter the distance in the furlongs" << endl;
+
+	cin >> furlongs;
+
+	cout << furlongs*220;
+
+	system("pause");
+	return 0;
+
+	}

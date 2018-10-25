@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	cout << "Enter height in inches:" << endl;
+	const int foot = 12;
+	int inch;
+	cin >> inch;
+	cout << inch/foot << " "<<"Foot." << endl;
+	cout << inch - inch/foot *foot << " "<<"Inch." << endl;
+	system("pause");
+	return 0;
+}

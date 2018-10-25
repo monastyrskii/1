@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+double converting(double lightyears)
+
+{
+
+	return (63240 * lightyears);
+
+}
+
+int main()
+
+{
+
+	double lightyears;
+
+	cout << "Enter the numÜer of light years: ";
+
+	cin >> lightyears;
+
+	cout << lightyears << endl;
+
+	cout << lightyears << " lights years = " << converting(lightyears) << " astronomical units" << endl;
+
+}

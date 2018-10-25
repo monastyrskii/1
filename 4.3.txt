@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+    
+int main ()
+{ 
+	const int size = 20;
+	char firstname[size], lastname[size];
+	cout << "Enter your first name: " << endl;
+	cin.getline(firstname,size);
+	cout << "Enter your last name: " << endl;
+	cin.getline(lastname,size);
+	cout << "Name: "<<lastname<<", " << firstname << endl;
+	return 0;
+  }

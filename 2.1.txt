@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+int main()
+	{
+
+	cout << "Monastirsky, Nizhny Novgorod, Kazanskoe Shosse Str, 12";
+
+	system("pause");
+	return 0;
+
+	}

@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+const double Gallon = 3.875;
+const double Mile = 62.14;
+    
+	double cons;
+	cout << "Enter petrol consumption (european style): ";
+	cin >> cons;
+	double consUSA = Mile/(cons/Gallon);
+	cout << cons << endl << "Your consumption = " << consUSA << " miles per gallon";
+	return 0;
+}

@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+struct CandyBar
+{
+	char name [25];
+	double netto;
+	int ccal;
+};
+
+int main ()
+{ 
+	CandyBar snack[3]={
+		{"Sweet dreams",1.1,1},
+		{"are made",2.1,3},
+		{"of this",5.1,8}};
+
+	cout << "Struct  " << snack[0].name << " " << snack[0].netto << " " << snack[0].ccal << endl;
+	cout << "Struct  " << snack[1].name << " " << snack[1].netto << " " << snack[1].ccal << endl;
+	cout << "Struct  " << snack[2].name << " " << snack[2].netto << " " << snack[2].ccal << endl;
+return 0;
+}
